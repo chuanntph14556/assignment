@@ -48,7 +48,7 @@ router.post('/updateAlbum',function (req,res) {
 router.get('/addalbum', function(req, res, next) {
   res.render('addalbum', { title: 'Thêm Hình Ảnh' });
 });
-var db = 'mongodb+srv://admin:chuantai72446@cluster0.0d1qy.mongodb.net/data?retryWrites=true&w=majority'
+var db = 'mongodb+srv://admin:chuantai72446@cluster0.0d1qy.mongodb.net/data'
 const mongoose = require('mongoose');
 mongoose.connect(db).catch(error => {
   console.log("co loi xay ra" + error)
